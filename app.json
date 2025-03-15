@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "expo-experiment",
-    "slug": "expo-experiment",
+    "name": "HanziHammer",
+    "slug": "hanzihammer",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -13,13 +13,15 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.bkinsey808.expoexperiment"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.bkinsey808.expoexperiment"
     },
     "web": {
       "bundler": "metro",
@@ -31,6 +33,14 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "674a166c-d83d-4949-875d-9fb6061dca3f"
+      }
     }
   }
 }
